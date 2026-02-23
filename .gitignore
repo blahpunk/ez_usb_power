@@ -183,3 +183,7 @@ secrets.*
 *.crt
 *.log
 logs/
+
+# EZ USB Power release artifacts
+release/*.zip
+release/*.exe

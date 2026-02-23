@@ -410,7 +410,7 @@ class DeviceCard(QFrame):
 class USBPowerMainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("USB Power Flow")
+        self.setWindowTitle("EZ USB Power")
         self.resize(1260, 790)
 
         self.latest_devices: Dict[str, USBDevice] = {}
@@ -432,7 +432,7 @@ class USBPowerMainWindow(QMainWindow):
 
         row1 = QHBoxLayout()
         title_box = QVBoxLayout()
-        title = QLabel("USB Power Flow")
+        title = QLabel("EZ USB Power")
         title.setObjectName("appTitle")
         subtitle = QLabel("Live USB sleep-state control")
         subtitle.setObjectName("appSubtitle")

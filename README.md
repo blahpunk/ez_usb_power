@@ -1,6 +1,8 @@
-# USB Power Flow (PyQt)
+# EZ USB Power (PyQt)
 
 Desktop GUI for scanning USB devices and controlling USB sleep power behavior via Windows registry.
+
+![EZ USB Power main screen](screenshots/ez-usb-power-main.png)
 
 ## Features
 
@@ -46,6 +48,19 @@ python .\usb_power_gui.py
 ```
 
 You can run as a regular user. When a write action needs elevation, the app prompts for Administrator approval (UAC).
+
+## Build Release (Windows)
+
+Use the build script:
+
+```powershell
+.\build_windows_release.ps1 -Version 0.1.0
+```
+
+Build outputs:
+
+- EXE: `dist\EZ_USB_Power.exe`
+- ZIP: `release\EZ_USB_Power_v<version>_win64.zip`
 
 ## Notes
 
