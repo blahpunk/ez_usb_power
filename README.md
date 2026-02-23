@@ -51,7 +51,7 @@ You can run as a regular user. When a write action needs elevation, the app prom
 
 - The app can read many registry keys without elevation, but write operations to `HKLM` usually require elevation.
 - Some device keys may still reject writes even when elevated due to stricter ACLs set by Windows or drivers.
-- If a device does not expose `EnhancedPowerManagementEnabled`, it is shown as `Sleep: Not set` and the toggle is disabled.
+- If a device does not expose `EnhancedPowerManagementEnabled`, it is shown as `Sleep: Unavailable` and the toggle is disabled.
 
 ## Source Context
 

@@ -387,7 +387,7 @@ class DeviceCard(QFrame):
         self.path_label.setText(device.key_path)
 
         if device.epm_value is None:
-            self.status_label.setText("Sleep: Not set")
+            self.status_label.setText("Sleep: Unavailable")
             self.status_label.setProperty("state", "na")
             self.switch.setEnabledState(False)
             self.switch.setChecked(False, animated=False)
